@@ -40,15 +40,15 @@ public:
         it = i.it;
         return *this;
     };
-    Iterator& operator=(const Iterator* i){
+    Iterator<T>& operator=(const Iterator* i){
         it = i->it;
         return *this;
     };
-    Iterator operator+(int n){
+    Iterator<T> operator+(int n){
         it+=n;
         return *this;
     };
-    Iterator operator-(int n){
+    Iterator<T> operator-(int n){
         it-=n;
         return *this;
     };
